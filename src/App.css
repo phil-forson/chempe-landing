@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,700;1,200&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .custom-bg {
   background: rgba(0, 134, 68, 0.05);
 }
@@ -19,6 +27,10 @@
   border-radius: 8px;
 }
 
+.testimonial-text {
+  color: rgba(81, 79, 110, 1);
+}
+
 .testimonial::before {
   content: "";
   width: 15px;
@@ -26,7 +38,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  background-color: black;
+  background-color: #008644;
 }
 
 .card {

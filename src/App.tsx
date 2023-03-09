@@ -81,18 +81,18 @@ function App() {
           </div>
         </section>
       </div>
-      <section className="h-auto px-[320px] py-[80px]">
-        <div className="w-full text-center text-primary font-bold text-[30px] mb-[100px]">
+      <section className="h-auto lg:px-[320px] lg:py-[80px] vsm:px-10 vsm:py-8">
+        <div className="w-full text-center text-primary font-bold text-[30px] mb-[80px]">
           Choose Your Solution
         </div>
-        <div className="flex justify-between gap-x-[115px] items-center">
-          <div className="relative h-[573px] ">
-            <div className="custom-bg h-[573px] w-[400px] mt-[73px] rounded-[20px] "></div>
-            <div className="absolute top-0 left-16">
-              <img src={Premium} className="h-[574px]" />
+        <div className="flex justify-between lg:flex-row vsm:flex-col vsm:gap-y-[100px] lg:gap-x-[115px] items-center">
+          <div className="relative lg:h-[573px] ">
+            <div className="custom-bg lg:h-[573px] vsm:h-[380px] lg:w-[400px] vsm:w-[280px] mt-[73px] rounded-[20px] "></div>
+            <div className="absolute top-0 lg:left-16 vsm:left-[52px]">
+              <img src={Premium} className="lg:h-[574px] vsm:h-[380px] " />
             </div>
           </div>
-          <div className="flex flex-col text-primary">
+          <div className="flex flex-col text-primary vsm:text-center lg:text-left">
             <div className="font-bold text-[35px]">QR Payment</div>
             <div className="">
               The diner scans the QR code to see the menu and when finished
@@ -109,15 +109,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="mt-[200px] flex flex-row-reverse justify-between gap-x-[115px] items-center">
-          <div className="relative h-[573px] ">
-            <div className="custom-bg h-[573px] w-[400px] mt-[73px] rounded-[20px] "></div>
-            <div className="absolute top-0 left-16">
-              <img src={Premium} className="h-[574px]" />
+        <div className="flex justify-between lg:flex-row-reverse vsm:flex-col vsm:gap-y-[100px] lg:gap-x-[115px] items-center mt-[200px]">
+          <div className="relative lg:h-[573px] ">
+            <div className="custom-bg lg:h-[573px] vsm:h-[380px] lg:w-[400px] vsm:w-[280px] mt-[73px] rounded-[20px]"></div>
+            <div className="absolute top-0 lg:left-16 vsm:left-[52px]">
+              <img src={Premium} className="lg:h-[574px] vsm:h-[380px]" />
             </div>
           </div>
-          <div className="flex flex-col text-primary">
-            <div className="font-bold text-[35px]">Order and pay</div>
+          <div className="vsm:text-center lg:text-left text-primary">
+            <div className="font-bold text-[35px] ">Order and pay</div>
             <div className="">
               Scan the QR code, choose your products and order and pay from your
               phone without calling the waiter or downloading any app. Choose
@@ -134,16 +134,19 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="h-auto py-[80px] px-[90px]">
-        <div className="w-full text-center text-primary font-bold text-[30px] mb-[100px]">
+      <section className="h-auto py-[80px] lg:px-[90px] vsm:px-[36px]">
+        <div className="w-full text-center text-primary font-bold text-[30px] vsm:mb-10 lg:mb-[80px] vsm:px-4">
           Add the best features
         </div>
-        <div className="lg:rounded-[20px] custom-bg lg:h-auto w-full lg:py-[90px] vsm:px-[36px] lg:px-[150px]">
-          <div className=" flex justify-between gap-x-[85px] items-center">
-            <div className="w-1/2">
-              <img src={GoogleReviews} className="h-[500px] w-fit" />
+        <div className="lg:rounded-[20px] lg:custom-bg lg:h-auto w-full lg:py-[20px] lg:px-[150px]">
+          <div className=" flex lg:flex-row vsm:flex-col justify-between vsm:gap-y-[30px] lg:gap-x-[85px] items-center">
+            <div className="lg:w-1/2">
+              <img
+                src={GoogleReviews}
+                className="lg:h-[500px] vsm:h-[358px] lg:w-fit vsm:w-[275px]"
+              />
             </div>
-            <div className="flex flex-col text-primary w-1/2 mr-[104px]">
+            <div className="flex flex-col text-primary lg:w-1/2 lg:mr-[104px]">
               <div className="orange-linear rounded-[20px] w-[90px] mb-5 h-auto px-[22px] py-[22px] ">
                 <img src={GooglePlus} />
               </div>
@@ -162,11 +165,14 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="mt-[90px] flex flex-row-reverse justify-between gap-x-[85px] items-center">
-            <div className="w-1/2">
-              <img src={Loyalty} className="h-[500px] w-fit" />
+          <div className="mt-[90px] flex vsm:flex-col lg:flex-row-reverse justify-between  vsm:gap-y-[30px] lg:gap-x-[85px] items-center">
+            <div className="lg:w-1/2">
+              <img
+                src={Loyalty}
+                className="lg:h-[500px] vsm:h-[358px] lg:w-fit vsm:w-[275px]"
+              />
             </div>
-            <div className="flex flex-col text-primary w-1/2 mr-[104px]">
+            <div className="flex flex-col text-primary lg:w-1/2 lg:mr-[104px]">
               <div className="orange-linear rounded-[20px] w-[90px] mb-5 h-auto px-[22px] py-[22px] ">
                 <img src={LoyaltyIcon} />
               </div>
@@ -187,19 +193,31 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="h-auto bg-primary px-[200px] py-[90px]">
-        <div className="text-[30px] w-full font-bold text-white text-center">
+      <section className="h-auto bg-primary lg:px-[200px] lg:py-[90px] vsm:py-24 vsm:px-[36px]">
+        <div className="text-[30px] w-full font-bold text-white vsm:text-left lg:text-center">
           More than 30 restaurants trust us
         </div>
-        <div className="flex gap-x-6 justify-center items-center mt-[90px]">
-          <img src={Capitol} />
-          <img src={Lagrilla} />
-          <img src={Azemera} />
-          <img src={Marriot} />
+        <div className="flex vsm:flex-wrap vsm:gap-x-4 lg:gap-x-3 justify-start items-center vsm:mt-[50px] lg:mt-[90px]">
+          <img
+            src={Capitol}
+            className="vsm:h-[65px] vsm:w-[61px] lg:w-[152px] lg:h-fit"
+          />
+          <img
+            src={Lagrilla}
+            className="vsm:h-fit vsm:w-[98px] lg:w-[256px] lg:h-fit"
+          />
+          <img
+            src={Azemera}
+            className="vsm:h-fit vsm:w-[138px] lg:w-[360px] lg:h-fit"
+          />
+          <img
+            src={Marriot}
+            className="vsm:h-fit vsm:w-[138px] lg:w-[291px] lg:h-fit"
+          />
         </div>
       </section>
-      <section className="px-[200px] py-[90px] h-auto">
-        <div className="flex flex-wrap h-[100vh] gap-x-8">
+      <section className="vsm:px-[36px] vsm:py-[40px] lg:px-[200px] lg:py-[90px] h-auto">
+        <div className="flex flex-wrap vsm:gap-y-7 lg:gap-x-8">
           <div className="mt-10 ">
             <div className="text-primary testimonial pl-[20px] relative">
               Testimonials
@@ -208,11 +226,14 @@ function App() {
               Hear what our clients say
             </div>
             <div className="mt-10">
-              <div className="card px-10 py-10 flex flex-col w-[500px] h-[350px]">
+              <div className="card vsm:px-[26px] vsm:py-[33px] lg:px-10 lg:py-10 flex flex-col vsm:w-[294px] lg:w-[500px] h-fit">
                 <div className="">
-                  <img src={Lagrilla2} className="w-[150px] h-[86px]" />
+                  <img
+                    src={Lagrilla2}
+                    className="lg:w-[150px] vsm:w-[78px] h-fit"
+                  />
                 </div>
-                <div className="mt-4">
+                <div className="vsm:mt-2 lg:mt-4 testimonial-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Ducimus repellat cum vel, accusantium beatae tempore numquam!
                   Officiis porro saepe assumenda!
@@ -230,11 +251,11 @@ function App() {
             </div>
           </div>
           <div className="flex flex-col gap-y-6">
-            <div className="card px-10 py-10 flex flex-col w-[500px] h-[350px]">
+            <div className="card vsm:px-[26px] vsm:py-[33px] lg:px-10 lg:py-10 flex flex-col vsm:w-[294px] lg:w-[500px] h-fit">
               <div className="">
-                <img src={Azemera2} className="w-fit h-[86px]" />
+                <img src={Azemera2} className="w-[185px] h-fit" />
               </div>
-              <div className="mt-4">
+              <div className="vsm:mt-2 lg:mt-4 testimonial-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Ducimus repellat cum vel, accusantium beatae tempore numquam!
                 Officiis porro saepe assumenda!
@@ -249,11 +270,11 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="card px-10 py-10 flex flex-col w-[500px] h-[350px]">
+            <div className="card vsm:px-[26px] vsm:py-[33px] lg:px-10 lg:py-10 flex flex-col vsm:w-[294px] lg:w-[500px] h-fit">
               <div className="">
-                <img src={Capitol2} className="w-fit h-fit" />
+                <img src={Capitol2} className="w-[91px] h-fit" />
               </div>
-              <div className="mt-4">
+              <div className="vsm:mt-2 lg:mt-4 testimonial-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Ducimus repellat cum vel, accusantium beatae tempore numquam!
                 Officiis porro saepe assumenda!
@@ -271,22 +292,22 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="px-10 py-10">
+      <section className="lg:px-10 vsm:px-[36px] vsm:py-10 lg:py-10">
         <div className="w-full text-center text-primary font-bold text-[30px]">
           Accept more payment methods
         </div>
-        <div className="flex gap-x-6 justify-center items-center mt-[40px]">
-          <img src={GooglePay} />
-          <img src={ApplePay} />
-          <img src={MTN} />
-          <img src={Vodafone} />
-          <img src={Visa} />
-          <img src={MasterCard} />
+        <div className="flex vsm:flex-wrap lg:gap-x-6 vsm:gap-x-3 vsm:gap-y-4 justify-center items-center mt-[40px]">
+          <img src={GooglePay} className="lg:w-[233px] vsm:w-[132px] h-fit" />
+          <img src={ApplePay} className="lg:w-[132px] vsm:w-[74px] h-fit" />
+          <img src={MTN} className="lg:w-[181px] vsm:w-[102px] h-fit" />
+          <img src={Vodafone} className="lg:w-[181px] vsm:w-[154px] h-fit" />
+          <img src={Visa} className="lg:w-[122px] vsm:w-[64px] h-fit" />
+          <img src={MasterCard} className="lg:w-[102px] vsm:w-[78px] h-fit" />
         </div>
       </section>
-      <section className="px-10 py-[90px]">
-        <div className="custom-bg px-[120px] flex gap-x-[150px] py-[50px] rounded-[20px]">
-          <div className="flex flex-col text-primary w-[400px]">
+      <section className="lg:px-10 lg:py-[90px] vsm:px-[36px] vsm:py-10">
+        <div className="custom-bg lg:px-[120px] vsm:px-7 vsm:py-10 flex lg:flex-row vsm:flex-col gap-x-[150px] lg:py-[50px] rounded-[20px]">
+          <div className="flex flex-col text-primary lg:w-[400px]">
             <div className="font-bold text-[30px]">Free Demo</div>
             <div className="">
               Fill out the form so that one of our specialists will call you and
@@ -294,7 +315,7 @@ function App() {
               restaurant and sell more with our solutions.
             </div>
           </div>
-          <div className="flex gap-x-[70px]">
+          <div className="flex lg:flex-row vsm:flex-col vsm:mt-10 lg:mt-0 gap-x-[70px]">
             <div className="flex flex-col">
               <label htmlFor="fullname" className="mb-2 font-bold">
                 Full name <span className="text-red-700">*</span>
@@ -315,10 +336,10 @@ function App() {
               </label>
               <input
                 name="pos"
-                className="h-[47px] px-3 outline-none custom-input"
+                className="h-[47px] px-3 outline-none custom-input lg:mb-0 vsm:mb-5"
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col ">
               <label htmlFor="email" className="mb-2 font-bold">
                 Email <span className="text-red-700">*</span>
               </label>
@@ -333,7 +354,7 @@ function App() {
                 name="restaurant"
                 className="h-[47px] px-3 outline-none mb-5 custom-input"
               />
-              <div className="h-6 mb-2"></div>
+              <div className="lg:h-6 lg:mb-2 vsm:h-0 vsm:mb-2"></div>
               <button className="outline-none border-none bg-primary w-full rounded-[8px] h-[47px] text-white">
                 Request Demo
               </button>
@@ -341,8 +362,8 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="mt-[50px] py-[80px] px-[250px] bg-primary text-white h-auto flex gap-x-[50px] w-full items-center justify-between">
-        <div className="">
+      <section className="mt-[50px] lg:py-[80px] vsm:px-[36px] vsm:py-10 lg:px-[250px] bg-primary text-white h-auto flex lg:flex-row vsm:flex-col vsm:gap-y-[70px] lg:gap-x-[50px] w-full lg:items-center vsm:items-start lg:justify-between">
+        <div className="vsm:w-full lg:w-auto">
           <div className="font-bold text-[15px]">Social Media</div>
           <div className="flex flex-col">
             <div className="">
@@ -356,7 +377,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="vsm:w-full lg:w-auto">
           <div className="font-bold text-[15px]">About Chempe</div>
           <div className="flex flex-col">
             <div className="">
@@ -370,7 +391,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="vsm:w-full lg:w-auto">
           <div className="font-bold text-[15px]">Legal</div>
           <div className="flex flex-col">
             <div className="">
@@ -384,7 +405,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="vsm:w-full lg:w-auto">
           <div className="font-bold text-[15px] mb-2">Join our newsletter</div>
           <div className="flex flex-col">
             <input
@@ -392,7 +413,7 @@ function App() {
               className="h-[37px] px-3 outline-none mb-2 text-black"
             />
             <button className="outline-none border-none orange-linear w-full h-[37px] text-white">
-              Request Demo
+              Subscribe
             </button>
           </div>
         </div>
