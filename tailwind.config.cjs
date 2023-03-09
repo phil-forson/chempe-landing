@@ -5,7 +5,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#008644'
+      }
+    },
     screens: {
       'vsm': '100px', 
 
@@ -18,7 +22,8 @@ module.exports = {
       'xl': '1280px',
 
       '2xl': '1536px',
-    }
+    },
+   
   },
   plugins: [],
 }

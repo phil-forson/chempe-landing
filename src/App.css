@@ -1,3 +1,7 @@
 .custom-bg {
   background: rgba(0, 134, 68, 0.05);
 }
+
+.orange-linear {
+  background: linear-gradient(180deg, #FFCF02 0%, #F04623 100%);
+}
