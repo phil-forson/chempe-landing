@@ -3,5 +3,35 @@
 }
 
 .orange-linear {
-  background: linear-gradient(180deg, #FFCF02 0%, #F04623 100%);
+  background: linear-gradient(180deg, #ffcf02 0%, #f04623 100%);
+}
+
+.testimonial {
+  text-transform: uppercase;
+  flex-basis: 25%;
+}
+
+.custom-input {
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  box-shadow: 0px 2px 2px rgba(33, 37, 41, 0.06),
+    0px 0px 1px rgba(33, 37, 41, 0.08);
+  border-radius: 8px;
+}
+
+.testimonial::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: black;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #eff0f7;
+  box-shadow: 0px 5px 14px rgba(8, 15, 52, 0.04);
+  border-radius: 20px;
 }
